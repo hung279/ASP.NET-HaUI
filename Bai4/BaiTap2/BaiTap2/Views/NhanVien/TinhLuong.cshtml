@@ -1,0 +1,37 @@
+﻿@model BaiTap2.Models.NhanVien
+@{
+    ViewBag.Title = "TinhLuong";
+}
+
+<h2>Tính Lươngg</h2>
+
+<table class="table" style="max-width: 600px;">
+    <tbody>
+        <tr>
+            <td>Mã NV: </td>
+            <td>
+                <div class="form-group">
+                    <input type="text" class="form-control" value="@Model.id ">
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Ngày công: </td>
+            <td>
+                <div class="form-group">
+                    <input type="text" class="form-control" value="@Model.ngayCong">
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Tiền lĩnh: </td>
+            <td>
+                <div class="form-group">
+                    <input type="text" class="form-control" value="@Model.tienLinh">
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>

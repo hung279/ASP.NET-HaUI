@@ -1,0 +1,69 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<form action="TinhDiem" method="post">
+    <table class="table" style="max-width: 600px;">
+        <thead>
+            <th colspan="3" class="text-center">NHẬP ĐIỂM THI</th>
+        </thead>
+            <tbody>
+                <tr>
+                    <td>Họ tên thí sinh: </td>
+                    <td>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="name">
+                        </div>
+                    </td>
+                    <td>
+                        <input type="checkbox" class="" name="familyStandard" id="family_standard" value="gia-dinh-chinh-sach">
+                        <label for="family_standard">Gia đình chính sách</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Chọn khu vực: </td>
+                    <td colspan="2">
+                        <select class="form-control" name="area">
+                            <option value="A">Khu vực A</option>
+                            <option value="B">Khu vực B</option>
+                            <option value="C">Khu vực C</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Vào điểm Toán: </td>
+                    <td colspan="2">
+                        <div class="form-group">
+                            <input type="text" name="math" class="form-control">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Vào điểm Lý: </td>
+                    <td colspan="2">
+                        <div class="form-group">
+                            <input type="text" name="physics" class="form-control">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Vào điểm Hóa: </td>
+                    <td colspan="2">
+                        <div class="form-group">
+                            <input type="text"  name="chemistry" class="form-control">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center" colspan="3">
+                        <button class="btn-primary">
+                            Tính
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+    </table>
+</form>

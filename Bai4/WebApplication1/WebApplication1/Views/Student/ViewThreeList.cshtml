@@ -1,0 +1,85 @@
+﻿
+@{
+    ViewBag.Title = "ViewThreeList";
+}
+
+<h2>ViewThreeList</h2>
+
+
+    <table class="table">
+        <tr>
+            <th>
+                name
+            </th>
+            <th>
+                address
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in ViewBag.list1)
+        {
+            <tr>
+                <td>
+                    @item.name
+                </td>
+                <td>
+                    @item.address
+                </td>
+
+            </tr>
+        }
+
+    </table>
+
+    <table class="table">
+        <tr>
+            <th>
+                name
+            </th>
+            <th>
+                address
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in ViewBag.list2)
+        {
+            <tr>
+                <td>
+                    @item.name
+                </td>
+                <td>
+                    @item.address
+                </td>
+
+            </tr>
+        }
+
+    </table>
+
+    <table class="table">
+        <tr>
+            <th>
+                name
+            </th>
+            <th>
+                address
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in ViewBag.list3)
+        {
+            <tr>
+                <td>
+                    @item.name
+                </td>
+                <td>
+                    @item.address
+                </td>
+
+            </tr>
+        }
+
+    </table>

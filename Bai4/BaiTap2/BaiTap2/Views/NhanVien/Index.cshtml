@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<form action="Tinhluong" method="post">
+    <table class="table" style="max-width: 600px;">
+        <tbody>
+            <tr>
+                <td>Mã NV: </td>
+                <td>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="id">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Bậc lượng: </td>
+                <td>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="bacLuong">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Ngày công: </td>
+                <td>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="ngayCong">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Chức vụ: </td>
+                <td>
+                    <select class="form-control" name="chucVu">
+                        <option value="truong-phong">Trưởng phòng</option>
+                        <option value="pho-phong">Phó phòng</option>
+                        <option value="nhan-vien">Nhân viên</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Giới tính: </td>
+                <td>
+                        <input type="radio" name="gioiTinh" value="1">
+                        <label>Nam</label>
+                        <input type="radio" name="gioiTinh" value="0">
+                        <label>Nữ</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Ngoại ngữ: </td>
+                <td>
+                    <div class="form-group">
+                        <input type="checkbox" name="ngoaiNgu" value="anh">
+                        <label>Anh</label>
+                        <input type="checkbox" name="ngoaiNgu" value="phap">
+                        <label>Pháp</label>
+                        <input type="checkbox" name="ngoaiNgu" value="nga">
+                        <label>Nga</label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="text-center" colspan="2">
+                    <button class="btn-primary">
+                        Tính
+                    </button>
+                    <button class="btn-warning">
+                        Xóa
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</form>
