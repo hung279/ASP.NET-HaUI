@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đinh Tấn Hưng - 2020603858</title>
+    @RenderSection("head", required: false)
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        .title {
+            font-size: 72px;
+            background-color: #0070bf;
+            color: white;
+        }
+        img {
+            width: 240px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <h1 class="text-center title">Hanoi University of Industry</h1>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <ul class="list-unstyled">
+                    <li>@Html.ActionLink("Giới thiệu", "GioiThieu", "haui")</li>
+                    <li>@Html.ActionLink("Tuyển sinh", "TuyenSinh", "haui")</li>
+                    <li>@Html.ActionLink("Đào tạo", "DaoTao", "haui")</li>
+                </ul>
+            </div>
+            @RenderBody()
+
+        </div>
+    </div>
+    <div class="container-fluid">
+        <h1 class="text-center">Đinh Tấn Hưng - 2020603858</h1>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

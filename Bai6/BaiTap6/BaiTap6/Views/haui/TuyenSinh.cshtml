@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "TuyenSinh";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<div class="col-md-6">
+    Đây là trang tuyển sinh
+    <br />
+    Bây giờ là
+    <table class="table">
+        <tr>
+            <th>Name</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <td>Today is: </td>
+            <td>@DateTime.Now.ToString("dd/MM/yyyy")</td>
+        </tr>
+        <tr>
+            <td>Hour: </td>
+            <td>@DateTime.Now.Hour</td>
+        </tr>
+        <tr>
+            <td>Minute:</td>
+            <td>@DateTime.Now.Minute</td>
+        </tr>
+        <tr>
+            <td>Second: </td>
+            <td>@DateTime.Now.Second</td>
+        </tr>
+    </table>
+</div>
+<div class="col-md-3">
+    <img src="https://ptnt.huaf.edu.vn/wp-content/uploads/sites/17/2022/07/20227119399712b532dcd.png" alt=""  class="img-rounded" />
+</div>
